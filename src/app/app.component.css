@@ -1,0 +1,67 @@
+.calculator {
+    width: 260px;
+    margin: 100px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: #f8f8f8;
+    padding: 20px;
+    font-family: 'Arial', sans-serif; /* Simple font */
+}
+
+.display input {
+    width: 92%;
+    height: 50px;
+    text-align: right;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    color: #333;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.display input:focus {
+    background-color: #e0e0e0;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background: #ffffff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05), -2px -2px 5px rgba(28, 241, 224, 0.5);
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    background-color: #49cae1; /* Light grey hover */
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+button:active {
+    background-color: #e0e0e0;
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button.special {
+    background-color: #d0d0d0;
+    color: #fff;
+}
+
+button.special:hover {
+    background-color: #c0c0c0; /* Light grey hover for special buttons */
+}
